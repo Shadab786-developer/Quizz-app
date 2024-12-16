@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizz Application</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <style>
+    .hide {
+      display: none;
+    }
+
+    .li-element {
+      background-color: rgb(15 23 42);
+      padding: 12px 8px 12px 8px;
+      border-radius: 8px;
+      margin: 16px;
+    }
+
+    .li-right {
+      background-color: rgb(22 163 74);
+      padding: 12px 8px 12px 8px;
+      border-radius: 8px;
+      margin: 16px;
+    }
+
+    .li-wrong {
+      background-color: rgb(220 38 38);
+      padding: 12px 8px 12px 8px;
+      border-radius: 8px;
+      margin: 16px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-white flex items-center justify-center h-screen w-screen font-serif">
+
+  <div id="container" class="bg-slate-700 rounded-md  w-fit h-fit text-center flex-nowrap">
+    <h1 class="text-[35px] font-bold m-10 text-center">Quizz App</h1>
+    <div id="quiz-container">
+      <div id="question-container" class="text-[20px] hide">
+        <h2 id="question-text"></h2>
+        <ul id="choice-list">
+          <!-- choice will be updated dimacally -->
+        </ul>
+        <button id="next-btn" class="bg-purple-600 text-white p-2 rounded-sm mt-2 mb-7 text-[20px] hide">Next
+          Question</button>
+      </div>
+      <div id="result-container" class="text-[20px] hide">
+        <h2>Your Score:</h2>
+        <p id="score"></p>
+        <h2>Marks Obtain</h2>
+        <p id="marks"></p>
+        <button id="restart-btn" class="bg-purple-600 text-white p-2 rounded-sm mt-2 mb-7">Restart Quizz</button>
+      </div>
+      <button id="start-btn" class="bg-purple-600 text-white p-2 rounded-sm mt-2 mb-7 text-[20px]">Start Quizz</button>
+    </div>
+  </div>
+
+  <script src="quizz.js"></script>
+</body>
+
+</html>
